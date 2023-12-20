@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #102021;
+  --secondary-color: #00868B;
+  --secondary-color-dark: #004a4d;
+  --text-dark: #134d50;
+  --text-light: #9dc1bd;
+  --white: #000000;
+  --max-width: 1200px;
+}
+
+
+#header
+   body {
+      margin: 0;
+      padding: 0;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__container {
+  color: var(--text-light)
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--secondary-color-dark)
+}
+
+.section__title span {
+  color: var(--secondary-color);
+}
+
+.section__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color-dark);
+}
+
+body {
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+.about,
+.project {
+  background-color: var(--text-dark);
+}
+
+.service__grid,
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.project__card {
+  display: grid;
+  place-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project__card img {
+  transition: scale 3;
+}
+
+.project__card:hover img {
+  scale: 1.1;
+}
+
+  .action__btns {
+    gap: 2rem;
+  }
+
+  .service__grid,
+  .project__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+@media (min-width: 768px) {
+  .header__container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .service__grid,
+  .project__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
