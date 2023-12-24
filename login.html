@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Codecdev</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="display-1">Welcome to my Page.</h1>
+            </div>
+            <div class="col-4">
+                                
+                <h3 class="display-3">Login Here</h3>
+                <form action="login.php" method="POST">
+                    <div class="form-group"> 
+                        <label for="uname">Username</label>
+                        <!-- Fixed input element syntax -->
+                        <input type="text" class="form-control" name="uname">
+                    </div>
+                    <div class="form-group"> 
+                        <label for="password">Password</label>
+                        <!-- Fixed input element syntax -->
+                        <input type="text" class="form-control" name="password">
+                    </div>
+                    <div class="form-group"> <!-- Added a proper class for form-group -->
+                        <!-- Fixed input element syntax and added a name attribute for the submit button -->
+                        <input type="submit" class="btn btn-primary" name="submit">
+                        <a href="registration.php" class="btn btn-link">Create Account</a>
+                    </div>
+                </form>
+                <!-- Removed the comment tag that was not properly closed -->
+            </div>
+        </div>
+    </div>
+    <!-- Fixed the script tag by adding proper syntax -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
